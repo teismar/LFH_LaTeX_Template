@@ -1,0 +1,28 @@
+# .gitignore für LFH Template
+
+# Temporäre LaTeX-Dateien
+*.aux
+*.bbl
+*.blg
+*.brf
+*.fls
+*.fdb_latexmk
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.synctex.gz
+
+# Kompilierte PDF-Ausgabe
+*.pdf
+
+# Build-Verzeichnisse
+_build/
+build/
+.out/
+out/
+
+# Vom Betriebssystem generierte Dateien
+.DS_Store
+Thumbs.db
