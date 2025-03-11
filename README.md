@@ -5,7 +5,7 @@
 
 Diese LaTeX-Vorlage wurde speziell für die Verwendung an der Leibniz-FH entwickelt und bietet eine modulare Struktur für die Erstellung wissenschaftlicher Arbeiten, Berichte und anderer Dokumente.
 
-**Wichtiger Hinweis:** Diese Vorlage erfordert die Kompilierung mit `lualatex` oder `xelatex`. Stellen Sie sicher, dass Arial auf Ihrem System installiert ist (Overleaf unterstützt beide Optionen).
+**Wichtiger Hinweis:** Diese Vorlage erfordert die Kompilierung mit `lualatex` oder `xelatex`. Stellen Sie sicher, dass Arial auf Ihrem System installiert ist (Overleaf unterstützt beide Optionen, [hier](https://www.overleaf.com/read/mxnfzswtrgnc#299745) ein Beispiel).
 
 ## Funktionen
 
