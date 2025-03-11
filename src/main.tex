@@ -1,0 +1,52 @@
+%! Author = teismar
+%! Date = 5/19/24
+%! File = main.tex
+
+% Preamble
+\documentclass[
+    11pt,
+    ngerman,
+    toc=listof,
+    toc=bibliography
+]{scrartcl}
+
+\input{base/Preamble}
+\input{base/Meta}
+\input{base/Befehle}
+
+% Document
+\begin{document}
+    % Set 1.5 line spacing for the entire document
+    \onehalfspacing    
+    \input{base/Deckblatt}
+
+    % Sperrvermerk ----------------------------------------------------------------
+    \include{src/base/Sperrvermerk}
+
+    % ToC -------------------------------------------------------------------------
+
+    \renewcommand{\contentsname}{Inhaltsverzeichnis}
+    \tableofcontents
+    \cleardoublepage
+
+
+    % Inhalt ---------------------------------------------------------------------
+    \include{base/Inhalt}
+    \listoftables
+    \cleardoublepage
+    \listoffigures
+    \cleardoublepage
+
+    % Literatur ------------------------------------------------------------------
+    \clearpage
+    \renewcommand{\refname}{Literaturverzeichnis}
+    \printbibliography[title={Literaturverzeichnis}]
+
+    % Erklärung ------------------------------------------------------------------
+    \clearpage
+    \input{base/Erklaerung}
+
+    % Anhang ---------------------------------------------------------------------
+    \clearpage
+    \input{base/Anhang}
+\end{document}

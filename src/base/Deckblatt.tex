@@ -1,0 +1,57 @@
+%! Author = teismar
+%! Date = 5/19/24
+
+\begin{titlepage}
+    \begin{center}
+        % FH Logo
+        \expandafter\includegraphics\expandafter[width=0.4\textwidth]{\insitutionLogo} % Adjusted logo size for better proportion
+        \vspace{1cm} % Space between logo and title
+
+        % Title
+        {\LARGE \pruefung\\[0.5cm]}
+        {\Huge\textbf{\titlePruefung}}\\
+
+        \vspace{2cm} % Space between title and author
+
+        % Author
+        {\huge \authorName}\\
+        \vspace{2cm} % Space between author and institution
+
+        % Additional Details in Tabular form
+        \large{
+        \begin{tabular}{ll}
+        Matrikelnummer: & \matrikelnummer\\
+        Studiengang: & \studiengang\\
+        Jahrgang: & \jahrgang\\
+        Modul: & \modul\\
+        Prüfer: & \pruefer\\
+        Abgabetermin: & \abgabeTermin\\
+        Institution: & \insitution\\
+        \end{tabular}
+        }
+        \vspace{2cm} % Adjusted space for a balanced look
+
+        % Conditional inclusion of Employer Logo and Address
+        \ifthenelse{\equal{\includeBetrieb}{true}}{%
+            % Title
+            {\Large \textbf{Arbeitgeber:}}\\
+            \vspace{0.5cm}
+            % Employer Logo
+            \expandafter\includegraphics\expandafter[height=2cm]{\betriebLogo}\\
+            % Employer Address
+            \large \betriebName\\
+            \normalsize \betriebAnschift\\
+            \normalsize \betriebOrt\\
+            \vspace{1cm}
+        }{}
+
+
+        % Date
+        {\large \today} % Automatically adds today's date
+
+
+        \vfill % Pushes the following text to the bottom of the page
+
+
+    \end{center}
+\end{titlepage}
