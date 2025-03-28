@@ -73,6 +73,11 @@
         \setlength{\parindent}{0pt}
         \pagestyle{scrheadings}
 
+        \AtBeginDocument{%
+            \addtocontents{lof}{\protect\markboth{\listfigurename}{\listfigurename}}%
+            \addtocontents{lot}{\protect\markboth{\listtablename}{\listtablename}}%
+        }
+
 
 % Bibliography
 \usepackage[backend=biber, style=apa]{biblatex}
